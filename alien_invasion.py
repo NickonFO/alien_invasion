@@ -22,7 +22,7 @@ def rungame():
     while True:
         gf.check_events(ai_settings, screen, ship, bullets)
         ship.update()
-        bullets.update()
-        gf.update_screen(ai_settings, screen, ship, bullets)
+        gf.update_bullets(bullets)
 
+        gf.update_screen(ai_settings, screen, ship, bullets)
 rungame()
